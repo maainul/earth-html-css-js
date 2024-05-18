@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-light: #74a84a;
+  --primary-dark: #2c541d;
+  --black: #000000;
+  --white: #efefef;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+.navlists {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.navlists li a:hover {
+  color: var(--primary-dark);
+}
+
+.logo {
+  font-size: 34px;
+  color: var(--primary-dark);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.header {
+  background: url('img/main.png');
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.primary-btn {
+  padding: 10px 24px;
+  border: none;
+  background-color: var(--primary-light);
+  color: var(--white);
+  transition: all 0.5s ease;
+}
+
+.primary-btn:hover {
+  cursor: pointer;
+  background-color: var(--primary-dark);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: var(--primary-dark);
+  margin-top: 120px;
+}
+
+.header-content h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.header-content p {
+  font-size: 40px;
+
+}
+
+.menu-btn {
+  display: none;
+}
+
+
+
+/* Responsive */
+
+@media (max-width:520px) {
+  .header {
+    min-height: 50vh;
+  }
+
+  .header-content h1 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .header-content p {
+    font-size: 24px;
+
+  }
+
+  .nav {
+    padding: 16px;
+  }
+
+  .navlists {
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 80%;
+    height: 100%;
+    align-items: end;
+    padding-top: 80px;
+    margin-right: -900px;
+    transition: all 0.5s ease;
+  }
+
+  .navlists.active {
+    margin-right: 0;
+  }
+
+
+  .navlists li {
+    border-bottom: 1px solid var(--primary-dark);
+    width: 100%;
+    padding: 8px 16px;
+    text-align: right;
+
+  }
+
+  .menu-btn {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    background-color: var(--primary-light);
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
