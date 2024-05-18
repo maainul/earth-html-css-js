@@ -13,24 +13,100 @@
     <section class="header">
         <div class="container">
             <nav class="navbar">
-                <a href="" class="logo">EARTH</a>
+                <a href="index.html" class="logo">EARTH</a>
                 <ul class="navlists">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">SERVICES</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
                 <div class="menu-btn">
                     <img src="img/menu.svg" alt="">
                 </div>
             </nav>
             <div class="header-content">
-                <h1>EARTH</h1>
-                <p>ENDLESS POTENTIAL</p>
+                <h1 class="header__title">EARTH</h1>
+                <p class="header__subtitle">ENDLESS POTENTIAL</p>
                 <button class="primary-btn">EXPLORE</button>
             </div>
         </div>
     </section>
+    <!-- Services -->
+    <section class="container section-gap">
+        <div class="services">
+            <div class="service">
+                <img src="img/service-1.png" alt="" srcset="">
+                <div class="services-content">
+                    <h3>Web Design</h3>
+                    <p>Custom web design for small business,we help you capture new audiences and increase your sales
+                    </p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="img/service-2.png" alt="" srcset="">
+                <div class="services-content">
+                    <h3>Graphic Design</h3>
+                    <p>Logos,merchandise and more.Anyone can create nice graphics.We think it's better to create
+                        memorable ones.
+                    </p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="img/service-3.png" alt="" srcset="">
+                <div class="services-content">
+                    <h3>Content Creation</h3>
+                    <p>Want to attract people to your Website?You have to have the best content in the world.That's what
+                        we do.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="container section-gap">
+        <div class="about__us">
+            <div class="about__us__left">
+                <h2 class="section__title">ABOUT US</h2>
+                <p>I made it so it is super easy to update and so that it flows perfectly with my tutorials.Lots of love
+                    and
+                    hundreds of hours went into making it. I hope love it as much as I do. I wish you the best of luck
+                    with
+                    your
+                    business,enjoy the adventure.
+                </p>
+            </div>
+            <div class="about__us__right">
+                <img src="img/about.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Talk to Us -->
+    <section class="container section-gap">
+        <div class="talk_to_us">
+            <h3 class="section__title center">TALK TO US</h3>
+            <p>Have any Questions? We are always open to talk about your business,new projects,
+                creative opportunities and how we can help you.
+            </p>
+            <button class="primary-btn">GET IN TOUCH</button>
+        </div>
+
+    </section>
+
+    <footer class="container">
+        <nav class="navbar">
+            <ul class="navlists">
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            <a href="" class="logo">EARTH</a>
+            <p>@2024 Earth.All right reserved.</p>
+        </nav>
+    </footer>
+
     <script>
 
         const menuBtn = document.querySelector('.menu-btn')
@@ -39,8 +115,6 @@
         menuBtn.addEventListener('click', function () {
             navLinks.classList.toggle('active')
         })
-        console.log(menuBtn)
-        console.log(navLinks)
 
 
     </script>
