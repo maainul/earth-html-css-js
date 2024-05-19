@@ -267,12 +267,38 @@ footer .navbar .logo {
 /************************************** */
 .contact__header {
   background: url(img/contact-banner.png);
+  width: 100vw;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about__header {
   background: url(img/about-bannerr.png);
-
+  width: 100vw;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+/* ******************************** */
+/* About US */
+/* ******************************** */
+.about__us__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+  padding-bottom: 196px;
+}
+
+.section__sub__details {
+  margin-top: 20px;
+}
+
+
 
 /* Responsive */
 
@@ -422,5 +448,14 @@ footer .navbar .logo {
     width: 320px;
     height: 250px;
   }
+
+  .about__us__section {
+    flex-direction: column;
+    padding-bottom: 0;
+    text-align: center;
+    padding: 0 20px;
+    gap: 20px;
+  }
+
 
 }
